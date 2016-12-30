@@ -1,6 +1,6 @@
 'use strict';
-
-export default function () {
+//books reducer returns an array.
+export default function (state) {
   return [
     {title: 'JavaScript: The Good Parts'},
     {title: 'Harry Potter'},
