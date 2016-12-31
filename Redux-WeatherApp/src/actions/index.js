@@ -2,7 +2,7 @@
 
 import axios from 'axios';
 
-const API_KEY = '4e8a731cfabd1d4cb9ee7e22163f0570';
+const API_KEY = '';
 //action type
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 
