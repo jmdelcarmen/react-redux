@@ -1,0 +1,13 @@
+tr td.chart {
+  width: 270px;
+  max-height: 150px !important;
+}
+
+.input-group {
+  margin: 20px 0px;
+}
+
+td, th {
+  vertical-align: middle !important;
+  text-align: center !important;
+}
