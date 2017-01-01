@@ -6,5 +6,5 @@ export default function (state) {
     {title: 'Harry Potter', pages: 205},
     {title: 'The Dark Tower', pages: 354},
     {title: 'Eloquent Ruby', pages: 710}
-  ]
+  ];
 }

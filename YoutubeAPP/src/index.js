@@ -21,7 +21,6 @@ class App extends Component {
       selectedVideo: null,
       videos: []
     };
-
     this.videoSearch('Elon Musk');
   }
 

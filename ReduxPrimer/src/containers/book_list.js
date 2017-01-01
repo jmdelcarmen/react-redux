@@ -40,7 +40,7 @@ function mapDispatchToProps(dispatch) {
   //whenever selectBook is called, result should map
   //to all reducers
 
-  return bindActionCreators({ selectBook: selectBook }, dispatch);
+  return bindActionCreators({ selectBook }, dispatch);
 }
 
 //promote booklist from a component to a container
