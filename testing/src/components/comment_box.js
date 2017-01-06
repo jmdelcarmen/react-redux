@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as actions from '../actions/index';
+import { saveComment } from '../actions/index';
 
 class CommentBox extends Component {
     constructor(props) {
@@ -24,14 +24,17 @@ class CommentBox extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit.bind(this)} className="comment-box">
+                <h4>Add A Comment</h4>
                 <textarea 
                     onChange={this.handleChange.bind(this)} 
                     value={this.state.comment}/>
-                <button>Submit Comment</button>
+                <div>
+                    <button>Submit Comment</button>
+                </div>
             </form>
         );
     }
 }
 
-export default connect(null, { actions })(CommentBox);
+export default connect(null, { saveComment })(CommentBox);
 
