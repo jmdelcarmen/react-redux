@@ -37,5 +37,4 @@ describe('CommentBox', () => {
             expect(component.find('textarea')).to.have.value('');
         });
     });
-
 });
