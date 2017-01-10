@@ -40,3 +40,17 @@ export function signOutUser() {
         type: UNAUTH_USER
     };
 }
+
+export function signUpUser({ email, password }) {
+    return (dispatch) => {
+        axios.post(`${ROOT_URL}/signup`, { email, password })
+            .then(response => {
+                dispatch({ type: AUTH_USER }); 
+                localStorage.setItem('token', response.data.token);
+                browserHistory.push('/feature');
+            })
+            .catch(err => {
+                dispatch(authError(err.response.data.error));
+            });
+    }
+}
