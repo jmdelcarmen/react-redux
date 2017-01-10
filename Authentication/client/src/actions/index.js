@@ -54,3 +54,14 @@ export function signUpUser({ email, password }) {
             });
     }
 }
+
+export function fetchMessage() {
+    return (dispatch) => {
+        axios.get(ROOT_URL, {
+            headers: { authorization: localStorage.getItem('token') }
+        })
+            .then(response => {
+                console.log(response);
+            });
+    }
+}
