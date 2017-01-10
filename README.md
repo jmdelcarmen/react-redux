@@ -142,6 +142,7 @@
   ```
 
   - The **reducer** that will catch the action when each list-item is clicked.
+
   ```js
   'use strict';
   //state argument is not application state,
@@ -157,6 +158,7 @@
   }
   ```
 ---
+
 3. Creating an action and connecting it to redux
   - create an action/function that simply returns an object with **type** as a property
   - **reducers** are responsible for manipulating the Application state through the use of **actions**
@@ -825,7 +827,6 @@ describe('Actions', () => {
   - handling promises with by making 'Async' middleware
 
   ```js
-
     export default function ({ dispatch }) {
         return next => action => {
             //check if no payload or not a promise, just skip.
@@ -844,7 +845,7 @@ describe('Actions', () => {
         };
     }
   ```
-  
+
 4. Authentication
   - check authentication directory
   - too lengthy.
